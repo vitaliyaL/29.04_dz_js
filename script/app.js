@@ -118,19 +118,29 @@ function sumSort(str1, str2, str3) {
   return arr[0] + " " + arr[1] + " " + arr[2];
 }
 
-console.log(sumSort('ulululu','ololol','alalal'));
+console.log(sumSort("ulululu", "ololol", "alalal"));
 
-function userName(name){
-    if(name){
-        return console.log(`С уважением, ${name}`)
-    }
-    else{
-        while(!name){
-        name=prompt("Введите ваше имя:");
-        }
-        return console.log(`С уважением, ${name}`)
-    }
+function userName(name) {
+  if (name) {
+    return console.log(`С уважением, ${name}`);
+  } else {
+      name = prompt("Введите ваше имя:");
+    return console.log(`С уважением, ${name}`);
+  }
 }
 
-userName('vita');
+userName("vita");
 userName();
+
+
+
+function numPow(num1, num2) {
+  if (num2) {
+    return num1 ** num2;
+  } else {
+    return num1 ** 2;
+  }
+}
+
+console.log(numPow(2, 3));
+console.log(numPow(2));
