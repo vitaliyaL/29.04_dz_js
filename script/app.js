@@ -90,17 +90,24 @@ let n3 = +prompt("Введите первое число диапазона:");
 if (!isNaN(n3) && n3) {
   let n4 = +prompt("Введите второе число диапазона:");
   if (!isNaN(n4) && n4) {
-      let a=7;
-      if (n3 > n4) {
-        for (let i = n3; i >= n4 && a>0; i--) {
-          console.log(i);
-          a--;
-        }
-      } else {
-        for (let i = n3; i <= n4 && a>0; i++) {
-          console.log(i);
-          a--;
-        }
+    let a = 7;
+    if (n3 > n4) {
+      for (let i = n3; i >= n4 && a > 0; i--) {
+        console.log(i);
+        a--;
       }
+    } else {
+      for (let i = n3; i <= n4 && a > 0; i++) {
+        console.log(i);
+        a--;
+      }
+    }
   }
 }
+
+function sum(a, b, c) {
+  return a + b + c;
+}
+
+console.log(sum(1, 2, 3));
+console.log(sum("c", "a", "t"));
