@@ -111,3 +111,12 @@ function sum(a, b, c) {
 
 console.log(sum(1, 2, 3));
 console.log(sum("c", "a", "t"));
+
+function sumSort(str1, str2, str3) {
+  const arr = [str1, str2, str3];
+  arr.sort();
+  return arr[0] + " " + arr[1] + " " + arr[2];
+}
+
+console.log(sumSort('ulululu','ololol','alalal'));
+
