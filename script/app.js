@@ -120,3 +120,17 @@ function sumSort(str1, str2, str3) {
 
 console.log(sumSort('ulululu','ololol','alalal'));
 
+function userName(name){
+    if(name){
+        return console.log(`С уважением, ${name}`)
+    }
+    else{
+        while(!name){
+        name=prompt("Введите ваше имя:");
+        }
+        return console.log(`С уважением, ${name}`)
+    }
+}
+
+userName('vita');
+userName();
